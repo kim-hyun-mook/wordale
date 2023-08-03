@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+  </head>
+  <body>
+    <header>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 nav-btn"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <span class="wordle-logo">Wordle</span>
+
+      <ul class="link-box">
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 list1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </li>
+
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 list1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 7.5l.415-.207a.75.75 0 011.085.67V10.5m0 0h6m-6 0h-1.5m1.5 0v5.438c0 .354.161.697.473.865a3.751 3.751 0 005.452-2.553c.083-.409-.263-.75-.68-.75h-.745M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </li>
+
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 list1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div id="timer">time: 00:00</div>
+      <div class="board-row row-0">
+        <div class="board-column" data-index="00"></div>
+        <div class="board-column" data-index="01"></div>
+        <div class="board-column" data-index="02"></div>
+        <div class="board-column" data-index="03"></div>
+        <div class="board-column" data-index="04"></div>
+      </div>
+
+      <div class="board-row row-1">
+        <div class="board-column" data-index="05"></div>
+        <div class="board-column" data-index="06"></div>
+        <div class="board-column" data-index="07"></div>
+        <div class="board-column" data-index="08"></div>
+        <div class="board-column" data-index="09"></div>
+      </div>
+
+      <div class="board-row row-2">
+        <div class="board-column" data-index="10"></div>
+        <div class="board-column" data-index="11"></div>
+        <div class="board-column" data-index="12"></div>
+        <div class="board-column" data-index="13"></div>
+        <div class="board-column" data-index="14"></div>
+      </div>
+
+      <div class="board-row row-3">
+        <div class="board-column" data-index="15"></div>
+        <div class="board-column" data-index="16"></div>
+        <div class="board-column" data-index="17"></div>
+        <div class="board-column" data-index="18"></div>
+        <div class="board-column" data-index="19"></div>
+      </div>
+
+      <div class="board-row row-4">
+        <div class="board-column" data-index="20"></div>
+        <div class="board-column" data-index="21"></div>
+        <div class="board-column" data-index="22"></div>
+        <div class="board-column" data-index="23"></div>
+        <div class="board-column" data-index="24"></div>
+      </div>
+
+      <div class="board-row row-5">
+        <div class="board-column" data-index="25"></div>
+        <div class="board-column" data-index="26"></div>
+        <div class="board-column" data-index="27"></div>
+        <div class="board-column" data-index="28"></div>
+        <div class="board-column" data-index="29"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="coulmn-box-wrap">
+        <span data-key="Q">Q</span>
+          <span data-key="w">W</span>
+          <span data-key="E">E</span>
+          <span data-key="R">R</span>
+          <span data-key="T">T</span>
+          <span data-key="Y">Y</span>
+          <span data-key="U">U</span>
+          <span data-key="I">I</span>
+          <span data-key="O">O</span>
+          <span data-key="P">P</span>
+        </div>
+
+        <div class="coulmn-box row-2">
+          <span data-key="A">A</span>
+          <span data-key="S">S</span>
+          <span data-key="D">D</span>
+          <span data-key="F">F</span>
+          <span data-key="G">G</span>
+          <span data-key="H">H</span>
+          <span data-key="J">J</span>
+          <span data-key="K">K</span>
+          <span data-key="L">L</span>
+        </div>
+
+        <div class="coulmn-box row-3">
+          <span class="enter-txt" data-key="ENTER">ENTER</span>
+          <span data-key="Z">Z</span>
+          <span data-key="X">X</span>
+          <span data-key="C">C</span>
+          <span data-key="V">V</span>
+          <span data-key="B">B</span>
+          <span data-key="N">N</span>
+          <span data-key="M">M</span>
+          <span data-key="BACK">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 delete"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

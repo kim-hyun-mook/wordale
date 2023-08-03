@@ -1,0 +1,36 @@
+@charset "utf-8";
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+header svg.nav-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header span.wordle-logo {
+  width: 11px;
+  font-size: 35px;
+  color: #333;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 0 0;
+}
+header ul li svg.list1 {
+  width: 40px;
+  cursor: pointer;
+}
